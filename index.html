@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Farros | Web Developer</title>
+    <style>
+        :root {
+            --bg-color: #f9fafb;
+            --text-main: #111827;
+            --text-muted: #6b7280;
+            --accent: #2563eb;
+            --border: #e5e7eb;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            line-height: 1.7;
+            margin: 0;
+            padding: 0;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        .container {
+            max-width: 768px;
+            margin: 0 auto;
+            padding: 60px 24px;
+        }
+
+        header {
+            margin-bottom: 64px;
+        }
+
+        h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            letter-spacing: -0.025em;
+            margin: 0 0 8px 0;
+        }
+
+        .subtitle {
+            font-size: 1.25rem;
+            color: var(--text-muted);
+            margin-bottom: 24px;
+        }
+
+        section {
+            margin-bottom: 56px;
+        }
+
+        h2 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            border-bottom: 1px solid var(--border);
+            padding-bottom: 12px;
+            margin-bottom: 24px;
+        }
+
+        /* Skills */
+        .skills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 12px;
+        }
+
+        .skill-tag {
+            background: white;
+            border: 1px solid var(--border);
+            padding: 6px 14px;
+            border-radius: 24px;
+            font-size: 0.875rem;
+            color: var(--text-main);
+        }
+
+        /* Experience */
+        .experience-category {
+            margin-bottom: 32px;
+        }
+
+        .experience-category-label {
+            font-size: 0.75rem;
+            font-weight: 600;
+            letter-spacing: 0.08em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            margin-bottom: 16px;
+        }
+
+        .experience-list {
+            display: flex;
+            flex-direction: column;
+            gap: 24px;
+        }
+
+        .experience-item {
+            padding-left: 16px;
+            border-left: 2px solid var(--border);
+            border-radius: 0;
+            position: relative;
+        }
+
+        .experience-item.featured {
+            border-left-color: var(--accent);
+        }
+
+        .experience-item::before {
+            content: '';
+            position: absolute;
+            left: -5px;
+            top: 8px;
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: var(--border);
+        }
+
+        .experience-item.featured::before {
+            background-color: var(--accent);
+        }
+
+        .experience-date {
+            font-size: 0.875rem;
+            color: var(--text-muted);
+            margin-bottom: 4px;
+        }
+
+        .experience-role {
+            font-weight: 600;
+            font-size: 1.125rem;
+            margin: 0;
+        }
+
+        .experience-company {
+            font-size: 0.95rem;
+            color: var(--accent);
+            margin-bottom: 8px;
+            font-weight: 500;
+        }
+
+        .experience-item p {
+            margin: 0;
+            font-size: 0.95rem;
+        }
+
+        /* Projects */
+        .project {
+            margin-bottom: 20px;
+            background: white;
+            padding: 24px;
+            border: 1px solid var(--border);
+            border-radius: 8px;
+        }
+
+        .project h3 {
+            margin: 0 0 8px 0;
+            font-size: 1.25rem;
+        }
+
+        .project p {
+            margin: 0 0 16px 0;
+            color: var(--text-muted);
+        }
+
+        .project-tags {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 8px;
+            margin-bottom: 16px;
+        }
+
+        .project-tag {
+            background: var(--bg-color);
+            border: 1px solid var(--border);
+            padding: 2px 10px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+            font-family: "SF Mono", "Fira Code", monospace;
+        }
+
+        a {
+            color: var(--accent);
+            text-decoration: none;
+            font-weight: 500;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        footer {
+            margin-top: 80px;
+            padding-top: 32px;
+            border-top: 1px solid var(--border);
+            color: var(--text-muted);
+            font-size: 0.875rem;
+            display: flex;
+            justify-content: space-between;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <h1>Muhammad Farros Al Ammaar
+            </h1>
+            <div class="subtitle">Web Developer</div>
+            <p>Membangun aplikasi web modern yang responsif dan efisien. Berfokus pada arsitektur <em>backend</em> yang
+                solid dan pengalaman pengguna yang lancar.</p>
+        </header>
+
+        <section id="tentang">
+            <h2>Tentang Saya</h2>
+            <p>Bertransisi dari dunia pendidikan IT ke pengembangan software profesional. Saya senang memecahkan masalah
+                teknis, mengeksplorasi ekosistem web
+                modern, dan memastikan performa aplikasi berjalan optimal.</p>
+        </section>
+
+        <section id="keahlian">
+            <h2>Teknologi &amp; Keahlian</h2>
+            <div class="skills">
+                <span class="skill-tag">PHP</span>
+                <span class="skill-tag">Laravel</span>
+                <span class="skill-tag">Livewire</span>
+                <span class="skill-tag">Javascript</span>
+                <span class="skill-tag">TypeScript</span>
+                <span class="skill-tag">Hono</span>
+                <span class="skill-tag">TanStack</span>
+                <span class="skill-tag">Python</span>
+                <span class="skill-tag">Docker &amp; CI/CD</span>
+                <span class="skill-tag">Dart</span>
+                <span class="skill-tag">Flutter</span>
+            </div>
+        </section>
+
+        <section id="pengalaman">
+            <h2>Pengalaman</h2>
+
+            <div class="experience-category">
+                <div class="experience-category-label">Pengembangan Perangkat Lunak</div>
+                <div class="experience-list">
+
+                    <div class="experience-item featured">
+                        <div class="experience-date">Mar 2024 &ndash; Jun 2024</div>
+                        <h3 class="experience-role">Fullstack Laravel Developer Intern</h3>
+                        <div class="experience-company">RIMBA HOUSE | PT Rimba Ananta Vikasa Indonesia </div>
+                        <p>Terlibat langsung dalam siklus pengembangan aplikasi web menggunakan ekosistem
+                            <b>Laravel</b> dan melakukan integrasi antarmuka pengguna sesuai dengan kebutuhan bisnis
+                            perusahaan.
+                        </p>
+                    </div>
+
+                    <div class="experience-item featured">
+                        <div class="experience-date">Okt 2024 &ndash; Saat Ini</div>
+                        <h3 class="experience-role">IT Mentor (Mahasiswa)</h3>
+                        <div class="experience-company">IDN</div>
+                        <p>Memberikan bimbingan teknis kepada mahasiswa dalam pengembangan proyek perangkat lunak.
+                            Bertanggung jawab melakukan <i>code review</i>, membantu <i>debugging</i> untuk isu-isu
+                            kompleks yang memperkuat kemampuan saya dalam memahami berbagai pendekatan solusi.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+            <div class="experience-category">
+                <div class="experience-category-label">Pendidikan &amp; Pengajaran</div>
+                <div class="experience-list">
+
+                    <div class="experience-item">
+                        <div class="experience-date">Jul 2021 &ndash; Jun 2023</div>
+                        <h3 class="experience-role">IT Teacher</h3>
+                        <div class="experience-company">SMK IDN Boarding School</div>
+                        <p>Merancang dan menyampaikan kurikulum logika pemrograman dan fundamental teknologi informasi.
+                        </p>
+                    </div>
+
+                    <div class="experience-item">
+                        <div class="experience-date">Apr 2023 &ndash; Saat Ini (Part-time / Freelance)</div>
+                        <h3 class="experience-role">Coding Instructor</h3>
+                        <div class="experience-company">Algonova by Algoritmics</div>
+                        <p>Mengajarkan konsep dasar <i>pemrograman</i> kepada anak-anak secara interaktif.
+                            Menerjemahkan konsep logika pemrograman yang abstrak menjadi materi visual yang mudah
+                            dicerna, melatih kemampuan komunikasi teknis yang adaptif.</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section id="proyek">
+            <h2>Proyek Pilihan</h2>
+
+            <div class="project">
+                <h3>Jahitin</h3>
+                <p>Platform pelacakan layanan jahit yang dibangun untuk mengatasi kurangnya transparansi status
+                    pesanan. Saya merancang REST API menggunakan Hono untuk performa ringan dan modular, serta
+                    mengimplementasikan arsitektur monorepo agar lebih mudah di-<em>scale</em> dan di-<em>maintain</em>.
+                </p>
+                <div class="project-tags">
+                    <span class="project-tag">Hono</span>
+                    <span class="project-tag">TanStack</span>
+                    <span class="project-tag">TypeScript</span>
+                    <span class="project-tag">Monorepo</span>
+                    <span class="project-tag">PostgreSQL</span>
+                </div>
+                <a href="https://github.com/muhammadfarros12/jahitin" target="_blank" rel="noopener noreferrer">Lihat
+                    Repositori
+                    Jahitin &rarr;</a>
+            </div>
+
+            <div class="project">
+                <h3>Pengaduan Warga</h3>
+                <p>Platform pelaporan masalah lingkungan dan sosial untuk komunitas lokal. Menampilkan alur
+                    pelaporan, pelacakan status pengaduan secara real-time, dan dasbor admin untuk manajemen laporan
+                    — dibangun dengan Livewire agar interaktif tanpa overhead JavaScript yang berat.</p>
+                <div class="project-tags">
+                    <span class="project-tag">Laravel</span>
+                    <span class="project-tag">Livewire</span>
+                    <span class="project-tag">PHP</span>
+                    <span class="project-tag">MySQL</span>
+                </div>
+                <a href="https://github.com/muhammadfarros12/laravel_pengaduan_warga" target="_blank"
+                    rel="noopener noreferrer">Lihat Repositori
+                    Pengaduan warga &rarr;</a>
+            </div>
+
+            <div class="project">
+                <h3>Expenses Tracker</h3>
+                <p>Aplikasi pelacak pengeluaran pribadi yang membantu pengguna memantau dan mengelola keuangan mereka.
+                    Dibangun dengan Laravel untuk backend yang kuat, serta Livewire untuk pengalaman pengguna yang
+                    responsif. Fitur utama termasuk pencatatan pengeluaran, kategori, dan laporan bulanan.
+                </p>
+                <div class="project-tags">
+                    <span class="project-tag">Laravel</span>
+                    <span class="project-tag">Livewire</span>
+                    <span class="project-tag">PHP</span>
+                    <span class="project-tag">MySQL</span>
+
+                </div>
+                <a href="https://github.com/muhammadfarros12/laravel-expense-track" target="_blank"
+                    rel="noopener noreferrer">Lihat Repositori
+                    Expenses Tracker &rarr;</a>
+            </div>
+        </section>
+
+        <section id="kontak">
+            <h2>Mari Terhubung</h2>
+            <p>Sedang mencari peluang baru, termasuk posisi <em>internship</em>, atau sekadar ingin berdiskusi seputar
+                teknologi? Jangan ragu untuk menghubungi saya.</p>
+            <p>
+                <a href="mailto:muhammadfarroos12@gmail.com">Email</a> &nbsp;&middot;&nbsp;
+                <a href="https://github.com/muhammadfarros12" target="_blank" rel="noopener noreferrer">GitHub</a>
+                &nbsp;&middot;&nbsp;
+                <a href="https://www.linkedin.com/in/muhammad-farroos/" target="_blank"
+                    rel="noopener noreferrer">LinkedIn</a>
+            </p>
+        </section>
+
+        <footer>
+            <span>&copy; 2026 Muhammad Farros Al Ammaar.</span>
+            <span>Portofolio.</span>
+        </footer>
+    </div>
+</body>
+
+</html>
