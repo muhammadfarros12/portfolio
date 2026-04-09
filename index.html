@@ -205,6 +205,49 @@
             display: flex;
             justify-content: space-between;
         }
+
+        /* =========================================
+           MEDIA QUERIES UNTUK RESPONSIVITAS MOBILE 
+           ========================================= */
+        @media (max-width: 600px) {
+            .container {
+                /* Mengurangi padding kiri-kanan agar konten lebih lebar di layar HP */
+                padding: 40px 16px; 
+            }
+
+            header {
+                margin-bottom: 48px;
+            }
+
+            h1 {
+                /* Mengecilkan ukuran nama agar tidak patah ke baris baru secara tidak rapi */
+                font-size: 2rem; 
+            }
+
+            .subtitle {
+                font-size: 1.125rem;
+            }
+
+            section {
+                margin-bottom: 48px;
+            }
+
+            h2 {
+                font-size: 1.35rem;
+            }
+
+            .project {
+                padding: 20px;
+            }
+
+            footer {
+                /* Mengubah posisi footer menjadi atas-bawah (menumpuk) di layar HP */
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+                gap: 12px;
+            }
+        }
     </style>
 </head>
 
