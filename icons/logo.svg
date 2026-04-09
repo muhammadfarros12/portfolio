@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
+    <rect width="512" height="512" rx="120" fill="#2563eb" />
+    
+    <text x="50%" y="50%" 
+          font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" 
+          font-size="160" 
+          font-weight="800" 
+          letter-spacing="5"
+          fill="#ffffff" 
+          text-anchor="middle" 
+          dominant-baseline="central"
+          dy="10">
+        MFA
+    </text>
+</svg>
